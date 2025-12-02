@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --primary       : #1E1E1E;
+  --secondary     : #000000;
+  --purple        : #8C01FA;
+  --skyblue       : #37CCF7;
+  --gray-light    : #C4C4C4;
+  --yellow        : #FFD512;
+}
+
+@theme {
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 90rem;
+  
+  /* colors */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-purple: var(--purple);
+  --color-skyblue: var(--skyblue);
+  --color-gray-light: var(--gray-light);
+  --color-yellow: var(--yellow);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-poppins: var(--font-poppins);
+  --font-roboto: var(--font-roboto);
+}
+
+@layer base {
+  html {
+    @apply bg-black;
+  }
+  body {
+    @apply font-poppins;
+  }
+  p {
+    @apply text-gray-light 2xl:text-base sm:text-sm text-xs leading-relaxed;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-5;
+  }
+}
+
+
+@import "./custom.css";
+
+
+
+
+
