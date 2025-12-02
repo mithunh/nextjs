@@ -14,7 +14,10 @@ const LogoSection: React.FC<LogoSectionProps> = ({ logos }) => {
   return (
     <div className="flex justify-center gap-3 md:gap-10 items-center flex-wrap">
       {logos.map((logo) => (
-        <div key={logo.name} className="flex justify-center items-center px-2 sm:px-4">
+        <div
+          key={logo.name}
+          className="flex justify-center items-center px-2 sm:px-4"
+        >
           <Image
             src={logo.src}
             alt={logo.alt}

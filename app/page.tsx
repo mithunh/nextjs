@@ -1,4 +1,3 @@
-
 import Banner from "@/sections/Banner";
 import BookADemo from "@/sections/BookADemo";
 import Companies from "@/sections/Companies";
@@ -9,18 +8,14 @@ import Ticker from "@/sections/Ticker";
 
 export default function Home() {
   return (
-    
     <>
       <Banner />
       <Companies />
-      
       <Main />
       <Ticker />
       <Cta />
       <Support />
       <BookADemo />
-      
     </>
   );
 }
-

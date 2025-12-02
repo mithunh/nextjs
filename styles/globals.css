@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --primary       : #1E1E1E;
-  --secondary     : #000000;
-  --purple        : #8C01FA;
-  --skyblue       : #37CCF7;
-  --gray-light    : #C4C4C4;
-  --yellow        : #FFD512;
+  --primary: #1e1e1e;
+  --secondary: #000000;
+  --purple: #8c01fa;
+  --skyblue: #37ccf7;
+  --gray-light: #c4c4c4;
+  --yellow: #ffd512;
 }
 
 @theme {
   --breakpoint-tablet: 40rem;
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 90rem;
-  
+
   /* colors */
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
@@ -48,10 +48,4 @@
   }
 }
 
-
 @import "./custom.css";
-
-
-
-
-

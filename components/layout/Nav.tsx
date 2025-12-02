@@ -5,7 +5,6 @@ import { useState } from "react";
 import { IoChevronDownOutline, IoMenu, IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "motion/react";
 
-
 type DropdownItem = {
   label: string;
   href: string;
@@ -31,7 +30,6 @@ export default function Navbar() {
   return (
     <nav>
       <div className="max-w-7xl mx-auto flex items-center justify-between lg:px-4 lg:py-3">
-
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex lg:items-center space-x-8 relative">
           <li>
@@ -78,25 +76,25 @@ export default function Navbar() {
             className="lg:hidden overflow-hidden bg-black py-4 space-y-4 absolute top-full left-0 right-0 z-40"
           >
             <div className="container">
-            <MobileLink href="/aibanking" label="AI Banking" />
+              <MobileLink href="/aibanking" label="AI Banking" />
 
-            <MobileDropdown
-              title="Payments"
-              href="/payments"
-              items={dropdownItems.payments}
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-            />
+              <MobileDropdown
+                title="Payments"
+                href="/payments"
+                items={dropdownItems.payments}
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+              />
 
-            <MobileDropdown
-              title="Payouts"
-              href="/payouts"
-              items={dropdownItems.payouts}
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-            />
+              <MobileDropdown
+                title="Payouts"
+                href="/payouts"
+                items={dropdownItems.payouts}
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+              />
 
-            <MobileLink href="/support" label="Support" />
+              <MobileLink href="/support" label="Support" />
             </div>
           </motion.div>
         )}
@@ -230,4 +228,3 @@ function MobileLink({ href, label }: MobileLinkProps) {
     </Link>
   );
 }
-

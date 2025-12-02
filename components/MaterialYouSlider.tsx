@@ -32,8 +32,7 @@ export default function MaterialYouSlider({
   spaceBetween = 20,
   autoplayDelay = 3000,
 }: MaterialYouSliderProps) {
-  const swiperRef = useRef<SwiperClass | null>(null); 
-  
+  const swiperRef = useRef<SwiperClass | null>(null);
 
   return (
     <div className="pt-4 pb-16 lg:py-4 relative mix-blend-luminosity">
@@ -64,14 +63,14 @@ export default function MaterialYouSlider({
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="bg-linear-to-t to-[#4FD8C0] from-[#112F2B] p-px rounded-xl">
-            <div
-              className="p-6 bg-black rounded-xl h-96 bg-top-left bg-no-repeat bg-size-[360px] relative"
-              style={{ backgroundImage: `url(${slide.imageUrl})` }}
-            >
-              <h3 className="text-white text-xl font-semibold absolute bottom-2">
-                {slide.title}
-              </h3>
-            </div>
+              <div
+                className="p-6 bg-black rounded-xl h-96 bg-top-left bg-no-repeat bg-size-[360px] relative"
+                style={{ backgroundImage: `url(${slide.imageUrl})` }}
+              >
+                <h3 className="text-white text-xl font-semibold absolute bottom-2 whitespace-nowrap">
+                  {slide.title}
+                </h3>
+              </div>
             </div>
           </SwiperSlide>
         ))}

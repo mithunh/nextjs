@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Main = () => {
   return (
-    <main className="py-12 sm:py-16 xl:py-44 bg-[url('/lighting_bg_left.png'),url('/lighting_bg_right.png')] bg-position-[left_top,right_top] bg-contain bg-no-repeat bg-fixed">
+    <main className="py-12 sm:py-16 xl:py-44 bg-[url('/lighting_bg_left.png'),url('/lighting_bg_right.png')] lg:bg-position-[left_top,right_top] bg-contain bg-no-repeat lg:bg-fixed">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 sm:gap-20 lg:gap-36">
           <div className="lg:order-2 space-y-6 lg:space-y-12">
@@ -41,7 +41,7 @@ const Main = () => {
                 Your Business Pays Are Now Faster and Secure
               </h3>
               <Image
-                src="/animated_globe.svg"
+                src="/animated_globe.png"
                 alt="Main Image"
                 width={600}
                 height={400}
@@ -49,7 +49,6 @@ const Main = () => {
               />
             </AnimateOnView>
           </div>
-          
         </div>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="basis-2/5 space-y-2.5 ">
@@ -57,7 +56,8 @@ const Main = () => {
               <h3 className="text-2xl sm:text-4xl xl:text-5xl lg:pr-20 leading-tight">
                 Our Intelligent Financial Suite
               </h3>
-              <p className="max-w-80">
+              <p className="max-w-80 relative pl-3">
+                <span className="h-1 w-1 block rounded-full absolute top-2 left-0.5 bg-skyblue"></span>
                 Tools that accelerate every step of your financial workflow.
               </p>
             </AnimateOnView>
@@ -71,6 +71,7 @@ const Main = () => {
                   stat={3969}
                   statLabel="Transactions per second"
                   borderColor="border-skyblue"
+                  color="bg-skyblue"
                 />
                 <StatCard
                   title="Payments"
@@ -78,6 +79,7 @@ const Main = () => {
                   stat={1675}
                   statLabel="Validator nodes"
                   borderColor="border-yellow"
+                  color="bg-yellow"
                 />
                 <StatCard
                   title="Payouts"
@@ -85,6 +87,7 @@ const Main = () => {
                   stat={163077581394}
                   statLabel="Total transactions"
                   borderColor="border-purple"
+                  color="bg-purple"
                 />
                 <StatCard
                   title="Merchant Onboarding"

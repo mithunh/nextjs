@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         <Link href="/" className="shrink-0">
           <Image
-            src="/uzofin_logo.png"
+            src="/uzofin_logo.svg"
             alt="UzoFin Logo"
             width={114}
             height={40}

@@ -22,7 +22,7 @@ const Ticker = () => {
           </p>
         </AnimateOnView>
       </div>
-      <div className="space-y-6">
+      <div className=" space-y-2 lg:space-y-6">
         <AnimateOnView direction="up" delay={0.2} stagger={0.2}>
           <Marquee loop={0} speed={100}>
             <InfoCard

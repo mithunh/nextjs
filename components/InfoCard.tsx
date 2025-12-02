@@ -1,5 +1,3 @@
-
-
 import Link from "next/link";
 import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
@@ -25,10 +23,10 @@ const InfoCard: React.FC<InfoCardProps> = ({
     <>
       <Link href="#" className="no-underline">
         <div
-          className={`relative p-6 rounded mx-4 pr-12`}
+          className={`relative p-3 lg:p-6 rounded mx-2 lg:mx-4 pr-12`}
           style={{ backgroundColor: bgColor }}
         >
-          <h4 className="text-white text-xl">{title}</h4>
+          <h4 className="text-white text-lg lg:text-xl">{title}</h4>
           <p
             className={`whitespace-nowrap text-transparent bg-clip-text`}
             style={{
