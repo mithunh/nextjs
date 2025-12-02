@@ -10,7 +10,7 @@ const Main = () => {
           <div className="lg:order-2 space-y-6 lg:space-y-12">
             <AnimateOnView direction="up" delay={0.2} stagger={0.2}>
               <article>
-                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#8C01FA] to-[#19FB9B] to-45% text-4xl sm:text-6xl xl:text-8xl">
+                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#8C01FA] to-[#19FB9B] to-45% text-4xl sm:text-6xl xl:text-8xl mb-2">
                   11.5M+
                 </h2>
                 <h4 className="uppercase text-gray-light">
@@ -18,7 +18,7 @@ const Main = () => {
                 </h4>
               </article>
               <article>
-                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#00BCD4] to-[#0047FF] to-45% text-4xl sm:text-6xl xl:text-8xl">
+                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#00BCD4] to-[#0047FF] to-45% text-4xl sm:text-6xl xl:text-8xl  mb-2">
                   99.9%
                 </h2>
                 <h4 className="uppercase text-gray-light">
@@ -26,7 +26,7 @@ const Main = () => {
                 </h4>
               </article>
               <article>
-                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#025B8C] to-[#00FFBD] to-45% text-4xl sm:text-6xl xl:text-8xl">
+                <h2 className="text-transparent bg-clip-text bg-linear-to-r from-[#025B8C] to-[#00FFBD] to-45% text-4xl sm:text-6xl xl:text-8xl mb-2">
                   70% Faster
                 </h2>
                 <h4 className="uppercase text-gray-light">
